@@ -8,6 +8,7 @@ Description: A package that provides functions for web scraping and data manipul
 Encoding: UTF-8
 LazyData: true
 License: MIT
+URL: https://github.com/irfanalidv/GoogleSearchR
 Imports: 
     curl,
     dplyr,
