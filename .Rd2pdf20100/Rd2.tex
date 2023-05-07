@@ -1,0 +1,32 @@
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8]{inputenc} % @SET ENCODING@
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `GoogleSearchR'}}
+\par\bigskip{\large \today}
+\end{center}
+\inputencoding{utf8}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdftitle = {GoogleSearchR: GoogleSearchR}}}{}\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdfauthor = {Md Irfan Ali}}}{}\begin{description}
+\raggedright{}
+\item[Title]\AsIs{GoogleSearchR}
+\item[Version]\AsIs{0.1.0}
+\item[Author]\AsIs{Md Irfan Ali }\email{irfanali29@hotmail.com}\AsIs{}
+\item[Maintainer]\AsIs{Md Irfan Ali }\email{irfanali29@hotmail.com}\AsIs{}
+\item[Description]\AsIs{A package that provides functions for web scraping and data manipulation, including URL encoding and concatenation of columns with a user-defined separator, as well as a function for getting the first Google search result for a given search query. With this package, you can easily extract data from Google search results and integrate it into your R workflow. Try it out today and see how it can improve your productivity!}
+\item[Encoding]\AsIs{UTF-8}
+\item[LazyData]\AsIs{true}
+\item[License]\AsIs{MIT}
+\item[Imports]\AsIs{curl,
+dplyr,
+remotes,
+rvest,
+urltools,
+utils,
+xml2}
+\end{description}
+\Rdcontents{\R{} topics documented:}

@@ -1,0 +1,18 @@
+Package: GoogleSearchR
+Title: GoogleSearchR
+Version: 0.1.0
+Authors@R: person("Md Irfan Ali", email = "irfanali29@hotmail.com", role = c("aut", "cre"))
+Author: Md Irfan Ali <irfanali29@hotmail.com>
+Maintainer: Md Irfan Ali <irfanali29@hotmail.com>
+Description: A package that provides functions for web scraping and data manipulation, including URL encoding and concatenation of columns with a user-defined separator, as well as a function for getting the first Google search result for a given search query. With this package, you can easily extract data from Google search results and integrate it into your R workflow. Try it out today and see how it can improve your productivity! 
+Encoding: UTF-8
+LazyData: true
+License: MIT
+Imports: 
+    curl,
+    dplyr,
+    remotes,
+    rvest,
+    urltools,
+    utils,
+    xml2
