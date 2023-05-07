@@ -13,6 +13,11 @@ You can install this package using the `devtools` package:
 devtools::install_github("irfanalidv/GoogleSearchR")
 ```
 
+```r
+install.packages('GoogleSearchR')
+
+```
+
 ## Usage
 
 ```r
