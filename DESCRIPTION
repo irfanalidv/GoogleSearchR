@@ -17,3 +17,4 @@ Imports:
     urltools,
     utils,
     xml2
+RoxygenNote: 7.2.3
