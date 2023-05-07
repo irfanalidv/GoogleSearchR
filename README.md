@@ -12,11 +12,6 @@ You can install this package using the `devtools` package:
 ```r
 devtools::install_github("irfanalidv/GoogleSearchR")
 ```
-## OR
-```r
-install.packages('GoogleSearchR')
-
-```
 
 ## Usage
 
