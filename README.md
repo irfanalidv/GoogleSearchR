@@ -4,7 +4,9 @@ GoogleSearchR is an R package that provides functions to query Google and extrac
 [![GitHub license](https://img.shields.io/github/license/irfanalidv/GoogleSearchR)](https://github.com/irfanalidv/GoogleSearchR/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/irfanalidv/GoogleSearchR)](https://github.com/irfanalidv/GoogleSearchR/issues)
 [![GitHub stars](https://img.shields.io/github/stars/irfanalidv/GoogleSearchR)](https://github.com/irfanalidv/GoogleSearchR/stargazers)
+
 [![Download Count](https://img.shields.io/github/downloads/irfanalidv/GoogleSearchR/total)
+
 ## Installation
 
 You can install this package using the `devtools` package:
