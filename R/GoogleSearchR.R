@@ -58,17 +58,20 @@ URLencode <- function(URL, reserved = FALSE) {
 #' @importFrom rvest html_nodes html_attr
 #' @importFrom xml2 read_html
 #' @export
-get_first_google_link <- function(name, root = TRUE) {
-  url = URLencode(paste0("https://www.google.com/search?q=",name))
-  page <- xml2::read_html(url)
-  # extract all links
-  nodes <- rvest::html_nodes(page, "a")
-  links <- rvest::html_attr(nodes,"href")
-  # extract first link of the search results
-  link <- links[startsWith(links, "/url?q=")][1]
-  # clean it
-  link <- sub("^/url\\?q\\=(.*?)\\&sa.*$","\\1", link)
-  # get root if relevant
-  if(root) link <- sub("^(https?://.*?/).*$", "\\1", link)
-  link
+                
+get_first_google_link <- function(name) {
+  url <- URLencode(paste0("https://www.google.com/search?q=", name))
+  response <- GET(url, user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"))
+  
+  if (status_code(response) != 200) {
+    warning("Failed to retrieve Google search results")
+    return(NA)
+  }
+  
+  page <- content(response, as = "parsed", type = "text/html")
+  
+  # Extract search result links
+  nodes <- html_nodes(page, "div.g a")
+  links <- html_attr(nodes, "href")
+  return(links[1])
 }
